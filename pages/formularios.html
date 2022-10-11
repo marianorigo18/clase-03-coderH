@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <a href="/index.html">volver al Inicio</a>
+    <h1>Formularios</h1>
+    <hr>
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <ol>
+            <li>form</li>
+            <li>action</li>
+            <ul>
+                <li>Ingresaremos el documento que se encargara de recibir los datos</li>
+            </ul>
+            <li>method</li>
+            <ul>
+                <li>Get</li>
+                <li>Post</li>
+            </ul>
+            <li>enctype</li>
+            <ul>
+                <li>Como se encriptara la informacion, que tipo de informacion procesara.</li>
+            </ul>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <h2>Ingresos de Textos</h2>
+        <ol>
+            <li>name</li>
+            <ul>
+                <li>dato para el servidor</li>
+            </ul>
+            <li>placeholder</li>
+            <ul>
+                <li>Indicacion para el usuario</li>
+            </ul>
+            <li>value</li>
+            <ul>
+                <li>indica lo que hara el boton o lo podemos indicar el texto que queramos.</li>
+            </ul>
+            <li>reset</li>
+            <ul>
+                <li>resetea los campos del formulario</li>
+            </ul>
+        </ol>
+    </section>
+    <hr>
+    <form action="" method="get" enctype="multipart/form-data">
+        <input type="text" name="full-name" placeholder="full name">
+        <input type="password" name="contracena" id="" placeholder="contraceña">
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="escribe aqui tu comentario"></textarea>
+        <input type="submit" name="" id="">
+        <button type="submit">enviar</button>
+    </form>
+    <hr>
+    <section>
+        <h2>Select</h2>
+        <ol>
+            <li>disable</li>
+            <ul>
+                <li>Esta opcion esta desabilitada</li>
+            </ul>
+            <li>selected</li>
+            <ul>
+                <li>
+                    Esta seleccionado la primer opcion como titulo y estara seleccionado
+                </li>
+            </ul>
+            <li>value</li>
+            <ul>
+                <li>sera el valor de cada una de las opciones</li>
+            </ul>
+        </ol>
+        <select name="" id="">
+            <option value="" disabled selected>Seleccione su gusto de pizza</option>
+            <option value="calabreza">calabreza</option>
+            <option value="napolitana">napolitana</option>
+        </select>
+    </section>
+    <hr>
+    <section>
+        <h2>Radio</h2>
+        <ol>
+            <li>label</li>
+            <ul>
+                <li>sera el titulo de los campos</li>
+            </ul>
+        </ol>
+        <label for="piedra">Piedra</label>
+        <input type="radio" name="pizza-type" id="piedra" value="piedra">
+        <label for="molde">Molde</label>
+        <input type="radio" name="pizza-type" id="molde" value="molde">
+    </section>
+    <section>
+        <h2>¿HTML es un lenguage de programacion?</h2>
+        <form action="">
+            <input type="radio" name="lenguage" id="si">
+            <label for="">si</label>
+            <input type="radio" name="lenguage" id="no">
+            <label for="">no</label>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h2>Checkbox</h2>
+
+        <h3>¿Como quiere recibir la pizza?</h3>
+        <form action="">
+            <label for="caliente">caliente</label>
+            <input type="checkbox" name="delivery" id="caliente">
+            <label for="frio">frio</label>
+            <input type="checkbox" name="delivery" id="frio">
+            <label for="tibio">tibio</label>
+            <input type="checkbox" name="delivery" id="tibio">
+        </form>
+        <p>El label y el input deben estar relacinados con el atributo id || name y for</p>
+        <p>El label se utiliza para identificar cada opcio</p>
+    </section>
+    <hr>
+    <section>
+        <h2>Agrupar campos</h2>
+        <h3>fieldset</h3>
+        <form action="">
+            <fieldset>
+                <legend>Carecteristicas</legend>
+                <h3>¿Como quiere recibir la pizza?</h3>
+                <label for="caliente">caliente</label>
+                <input type="checkbox" name="delivery" id="caliente">
+                <label for="frio">frio</label>
+                <input type="checkbox" name="delivery" id="frio">
+                <label for="tibio">tibio</label>
+                <input type="checkbox" name="delivery" id="tibio">
+            </fieldset>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h2>Crear Formulario</h2>
+        <form action="" method="get" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Ingrese su datos personales</legend>
+                <input type="text" name="name" id="name" placeholder="nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="apellido">
+                <h2>sexo</h2>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="sexo" id="femenino">
+                <div><textarea name="" id="" cols="30" rows="10" placeholder="ingrese un texto"></textarea></div>
+                <input type="button" value="enviar">
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
